@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Practice</title>
+</head>
+<body>
+  <h1>JavaScript Playground For Josh</h1>
+  <script>
+
+    let yearlyPay; 
+    yearlyPay = prompt("Please enter your yearly pay: ", 0); 
+
+    alert(`Your yearlypay is $${solvePay(yearlyPay)}`);  
+    alert(`Your daily pay is $${solveDailyPay(yearlyPay)}`);  
+
+
+    function solvePay(yearlyPay){
+      let weeklyPay = yearlyPay / 52; 
+      return weeklyPay.toFixed(2);       
+    }
+
+    function solveDailyPay(yearlyPay){
+      let weeklyPay = yearlyPay / 52; 
+      let dailyPay = weeklyPay / 7; 
+      return dailyPay.toFixed(2);       
+    }
+
+
+  </script>
+</body>
+</html>
