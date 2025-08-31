@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Practice</title>
+</head>
+<body>
+  <h1>JavaScript Playground For Josh</h1>
+  <script>
+    //Creates a program that extracts and adds the two least significant digits of an integer. 
+    // example 12345 = 9, 4213 = 4 
+    let digit; 
+    digit = Number(prompt("Please enter your digit: ")); 
+
+    alert(`Your sum is: ${extractor(digit)}`); 
+
+    function extractor(digit){
+      let firstDigit = parseInt(digit%10); 
+      alert(firstDigit); 
+      let secondDigit = parseInt((digit%100) / 10) ;
+      alert(parseInt(secondDigit)); 
+      let add = firstDigit + secondDigit; 
+      return add;  
+    }
+
+  </script>
+</body>
+</html>
