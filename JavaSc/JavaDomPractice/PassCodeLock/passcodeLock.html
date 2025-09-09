@@ -5,33 +5,14 @@
   <title>JavaScript Practice</title>
 </head>
 <body>
-  <h1>JavaScript Playground For Josh</h1>
-  <script>
-    /*Passcode Lock A program that will ask the user to instantiate their password,
-    after instantiation, the program will ask the user for the password. Attempts are 3.
-    When the user enters the right password, “ACCESS GRANTED” otherwise it will display \
-    “ACCESS DENIED” after 3 attempts.
-    */
-    const passwordChecker =() => {
-      let myPassword = prompt("Please enter your password:");
-      for(let i = 3; i>=0; i--){
-      let enterPass = prompt("What is your password?: "); 
-        if (myPassword == enterPass){
-          alert("Your Password is Correct!"); 
-          break; 
-        }
-        else if(i == 0){
-          alert("Access Denied"); 
-        }
-        else{
-          alert(`WRONG! Please re-enter your password (${i}) attempts remaining`);
-        }
-      }
-
-    };
-
-    passwordChecker(); 
-
+  <h1 id="esh1">Please Enter Your Password:</h1>
+  <input type="text" name="Password" id="inpPass">
+  <button id="bttn1">set pass</button>
+  <br>
+  <br>
+  <input type="text" name="Password" id="testPass">
+  <button id="bttn2">enter</button>
+  <script src="passCodeLock.js">
   </script>
 </body>
 </html>
