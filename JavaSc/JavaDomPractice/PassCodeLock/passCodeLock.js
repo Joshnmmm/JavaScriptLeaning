@@ -12,8 +12,7 @@ let att = 3;
 button1.addEventListener("click", () => {
   userSet = enterPass.value.trim(); 
   mainText.textContent = userSet; 
-}
-); 
+}); 
 
 button2.addEventListener("click", () => {
   let userInput = testPass.value.trim(); 
