@@ -1,0 +1,1 @@
+As of now October 4 2025. I have been switching to typescript however, I am not pushing any of it yet. Progress (CREATING A COMPONENT RENDERING A LIST CONDITIONAL RENDERING HANDLING EVENTS DEFINING STATE PROPS PASSING CHILDREN)
